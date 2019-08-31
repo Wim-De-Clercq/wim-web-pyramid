@@ -1,0 +1,114 @@
+@charset "utf-8"
+
+//@import "wim_web_dark"
+@import "utilities/initial-variables"
+@import "utilities/functions"
+
+$primary: $turquoise
+$menu-background: $black-ter !default
+$menu-hover-background: lighten($menu-background, 5%)
+$page-background: $white-ter
+$page-text-color: findColorInvert($page-background)
+$menu-text-color: findColorInvert($menu-background)
+
+$table-background-color: darken($page-background, 5%)
+$table-striped-row-even-background-color: darken($table-background-color, 5%)
+$table-row-hover-background-color: darken($table-background-color, 10%)
+$table-striped-row-even-hover-background-color: $table-row-hover-background-color
+
+$navbar-breakpoint: $tablet
+$navbar-item-hover-color: $menu-text-color
+$navbar-item-hover-background-color: $menu-hover-background
+$navbar-background-color: $menu-background
+
+@import "utilities/derived-variables"
+
+$menu-item-color: $menu-text-color
+$menu-item-hover-color: $menu-text-color
+$menu-item-hover-background-color: $menu-hover-background
+$menu-item-active-color: $primary-invert
+$navbar-item-color: $menu-text-color
+
+
+@import "utilities/_all"
+@import "base/_all"
+@import "elements/_all"
+@import "form/_all"
+@import "components/_all"
+@import "grid/_all"
+@import "layout/_all"
+@import "extensions/tooltip/bulma-tooltip.sass"
+
++until($navbar-breakpoint)
+  table
+    .limit3
+      display: none
+
+html
+  overflow-y: hidden
+body
+  height: 100%
+  background-color: $page-background
+
+.scrollbox
+  overflow: auto
+
+aside.menu
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+  padding-top: 1rem
+
+main.container
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+
+.main-wrapper
+  margin-top: 1rem
+
+aside.menu
+  max-width: 200px
+
+.menu
+  background-color: $navbar-background-color
+  height: 100vh
+
+#top-menu
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+
+#im
+  color: $primary
+
+.size-48
+  font-size: 48px
+
+.size-36
+  font-size: 36px
+
+.size-24
+  font-size: 24px
+
+.size-20
+  font-size: 20px
+
+.size-16
+  font-size: 16px
+
+.size-12
+  font-size: 12px
+
+.navbar-item img
+  max-height: initial
+
+.confirm-delete.tooltip
+  color: $orange
+
+a.card-footer-item
+  color: $card-color
+
+.parent
+  height: 100vh
+
+.main-wrapper
+  width: 100%
+  overflow: auto

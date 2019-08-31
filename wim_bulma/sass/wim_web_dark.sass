@@ -1,0 +1,23 @@
+// Colors
+
+$black:        hsl(0, 0%, 96%) !default
+$black-bis:    hsl(0, 0%, 93%) !default
+$black-ter:    hsl(0, 0%, 86%) !default
+
+$grey-darker:  hsl(0, 0%, 79%) !default
+$grey-dark:    hsl(0, 0%, 71%) !default
+$grey:         hsl(0, 0%, 52%) !default
+$grey-light:   hsl(0, 0%, 29%) !default
+$grey-lighter: hsl(0, 0%, 14%) !default
+
+$white-ter:    hsl(0, 0%, 10%) !default
+$white-bis:    hsl(0, 0%, 8%) !default
+$white:        hsl(0, 0%, 4%) !default
+
+$menu-background: $white-bis
+
+@function lighten($color, $percentage)
+  @return scale-color($color, $lightness: $percentage - 100)
+
+@function darken($color, $percentage)
+  @return scale-color($color, $lightness: $percentage)
