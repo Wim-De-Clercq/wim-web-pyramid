@@ -22,5 +22,6 @@ Seven
 
 
         $ cp aaa bbb
+        $ cp aaa bbb
 
 Fill the parameters
