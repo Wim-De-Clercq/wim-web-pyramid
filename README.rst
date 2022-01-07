@@ -18,7 +18,8 @@ Seven
 *****
 
 
-- Create the `.ini` file:
+- Create the `.ini` file
+
 
         $ cp aaa bbb
 
