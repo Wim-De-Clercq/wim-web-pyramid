@@ -1,27 +1,9 @@
-One
-===
+Proces toelatingen archeologie
+==============================
 
----
-Two
----
+----------------------------------
+Opzet lokale ontwikkeling (ubuntu)
+----------------------------------
 
-Four
-~~~~
-
-Five
-----
-
-Six
-^^^
-
-Seven
-*****
-
-
-- Create the `.ini` file
-
-
-    $ cp aaa bbb
-    $ cp aaa bbb
-
-Fill the parameters
+    $ pip install -r requirements-private.txt
+    $ pip install -r requirements-dev.txt
